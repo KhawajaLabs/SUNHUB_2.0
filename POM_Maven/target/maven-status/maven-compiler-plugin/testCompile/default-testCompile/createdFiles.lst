@@ -1,0 +1,6 @@
+com\sunhub\qa\test_cases\LoginPageTest.class
+com\sunhub\qa\test_cases\AddProductTest.class
+com\sunhub\qa\test_cases\MyListingTest.class
+com\sunhub\qa\test_cases\CheckoutTest.class
+com\sunhub\qa\test_cases\TestClass.class
+com\sunhub\qa\test_cases\RegisterPageTest.class

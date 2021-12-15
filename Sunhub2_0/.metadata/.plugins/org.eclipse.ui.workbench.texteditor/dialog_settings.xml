@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="564"/>
+		<item key="DIALOG_Y_ORIGIN" value="306"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item key="selection" value="lean"/>
+		<item key="wrap" value="false"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
+		<item key="incremental" value="false"/>
+		<item key="isRegEx" value="false"/>
+		<list key="findhistory">
+			<item value="lean"/>
+			<item value="selectedShipment"/>
+			<item value="payPalPaylater"/>
+			<item value="selectServiceClick"/>
+			<item value="//*[@id=&quot;content&quot;]"/>
+			<item value="//*[@id=&quot;content&quot;]/div[1]/div/div[2]/div[4]/div/div[1]/div[4]/div"/>
+			<item value="frame"/>
+			<item value="AddAttachment"/>
+			<item value="javascript"/>
+			<item value="condition"/>
+			<item value="age"/>
+			<item value="manufacturerBtn"/>
+			<item value="walls"/>
+			<item value="random"/>
+			<item value="width"/>
+		</list>
+		<list key="replacehistory">
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item key="DIALOG_X_ORIGIN" value="1033"/>
+		<item key="DIALOG_Y_ORIGIN" value="151"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

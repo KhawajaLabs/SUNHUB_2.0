@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.sunhub.qa.test_cases.TestBrokenLinks&apos; to &apos;TestBrokenLinksTest&apos;&#x0D;&#x0A;- Original project: &apos;POM_Maven&apos;&#x0D;&#x0A;- Original element: &apos;com.sunhub.qa.test_cases.TestBrokenLinks&apos;&#x0D;&#x0A;- Renamed element: &apos;com.sunhub.qa.test_cases.TestBrokenLinksTest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;TestBrokenLinks&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java=/optional=/true=/=/maven.pomderived=/true=/=/test=/true=/&lt;com.sunhub.qa.test_cases{TestBrokenLinks.java[TestBrokenLinks" matchStrategy="1" name="TestBrokenLinksTest" qualified="false" references="true" similarDeclarations="false" stamp="1635784732705" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.sunhub.ITestListener.ITestListenerImplementation"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)" verbose="0">
+    <classes>
+      <class name="com.sunhub.qa.test_cases.AddProductTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="ImageDeletionCheck"/>
+          <include name="DocumentDeletionCheck"/>
+        </methods>
+      </class> <!-- com.sunhub.qa.test_cases.AddProductTest -->
+      <class name="com.sunhub.qa.test_cases.LoginPageTest">
+        <methods>
+          <include name="SetUp"/>
+          <include name="BuyerLogin"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.sunhub.qa.test_cases.LoginPageTest -->
+      <class name="com.sunhub.qa.test_cases.RegisterPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="ExistingEmailValidationforRegisteration"/>
+          <include name="quit"/>
+        </methods>
+      </class> <!-- com.sunhub.qa.test_cases.RegisterPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\khawaja.muhammad\Eclipse_Work_Space\POM_Maven\src\main\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 4 failed,   16 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.LoginPageTest" class="method navigator-link" hash-for-method="BuyerLogin">BuyerLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.AddProductTest" class="method navigator-link" hash-for-method="DocumentDeletionCheck">DocumentDeletionCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.RegisterPageTest" class="method navigator-link" hash-for-method="ExistingEmailValidationforRegisteration">ExistingEmailValidationforRegisteration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.AddProductTest" class="method navigator-link" hash-for-method="ImageDeletionCheck">ImageDeletionCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.AddProductTest" class="method navigator-link" hash-for-method="AddProduct">AddProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.AddProductTest" class="method navigator-link" hash-for-method="AgeAndConditionCheck">AgeAndConditionCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.LoginPageTest" class="method navigator-link" hash-for-method="BsuinessLogin">BsuinessLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.CheckoutTest" class="method navigator-link" hash-for-method="CheckoutWithStripePayment">CheckoutWithStripePayment</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.CheckoutTest" class="method navigator-link" hash-for-method="ExistingUserGuestCheckout">ExistingUserGuestCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.LoginPageTest" class="method navigator-link" hash-for-method="GeneralValidEmailWrongPasswordVerification">GeneralValidEmailWrongPasswordVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.LoginPageTest" class="method navigator-link" hash-for-method="ISellerLogin">ISellerLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.LoginPageTest" class="method navigator-link" hash-for-method="MessageAppearance">MessageAppearance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.RegisterPageTest" class="method navigator-link" hash-for-method="NonExistingEmailCheck">NonExistingEmailCheck</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.CheckoutTest" class="method navigator-link" hash-for-method="NonExistingShopperGuestPPLLater">NonExistingShopperGuestPPLLater</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.CheckoutTest" class="method navigator-link" hash-for-method="NonRegisteredUser_registeration_while_guest_checkout">NonRegisteredUser_registeration_while_guest_checkout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.LoginPageTest" class="method navigator-link" hash-for-method="SPSellerValidateLogin">SPSellerValidateLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.CheckoutTest" class="method navigator-link" hash-for-method="TaxCalculation">TaxCalculation</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.AddProductTest" class="method navigator-link" hash-for-method="VerificationOfAddedManufacturer">VerificationOfAddedManufacturer</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.AddProductTest" class="method navigator-link" hash-for-method="existingBrandVerification">existingBrandVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.sunhub.qa.test_cases.AddProductTest" class="method navigator-link" hash-for-method="verifyDiscountedPrice">verifyDiscountedPrice</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sunhub.qa.test_cases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BuyerLogin">
+                  </a> <!-- BuyerLogin -->
+                  <span class="method-name">BuyerLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BCDS-LHR-33&apos;, ip: &apos;192.168.0.151&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\KHAWAJ~1.MUH\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41c9db9aece716283fa35d451543b6fd
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at com.sunhub.Login.pages.BuyerLoginPage.ValidateLogin(BuyerLoginPage.java:54)
+	at com.sunhub.qa.test_cases.LoginPageTest.BuyerLogin(LoginPageTest.java:49)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 40 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sunhub.qa.test_cases.AddProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DocumentDeletionCheck">
+                  </a> <!-- DocumentDeletionCheck -->
+                  <span class="method-name">DocumentDeletionCheck</span>
+                  <div class="stack-trace">java.lang.IllegalArgumentException: bound must be greater than origin
+	at java.base/java.util.concurrent.ThreadLocalRandom.nextInt(ThreadLocalRandom.java:337)
+	at com.sunhub.qa.util.TestUtil.randomCall(TestUtil.java:105)
+	at com.sunhub.AddProduct.pages.AddProduct.DocumentDeletionCheck(AddProduct.java:643)
+	at com.sunhub.qa.test_cases.AddProductTest.DocumentDeletionCheck(AddProductTest.java:81)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ImageDeletionCheck">
+                  </a> <!-- ImageDeletionCheck -->
+                  <span class="method-name">ImageDeletionCheck</span>
+                  <div class="stack-trace">java.io.IOException: Cannot run program &quot;./AutoIT/Image&quot;: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1142)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+	at java.base/java.lang.Runtime.exec(Runtime.java:591)
+	at java.base/java.lang.Runtime.exec(Runtime.java:415)
+	at java.base/java.lang.Runtime.exec(Runtime.java:312)
+	at com.sunhub.qa.util.TestUtil.uploadImage(TestUtil.java:159)
+	at com.sunhub.AddProduct.pages.AddProduct.ImagedeletionCheck(AddProduct.java:595)
+	at com.sunhub.qa.test_cases.AddProductTest.ImageDeletionCheck(AddProductTest.java:74)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+	at java.base/java.lang.ProcessImpl.create(Native Method)
+	at java.base/java.lang.ProcessImpl.&lt;init&gt;(ProcessImpl.java:483)
+	at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+	at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1109)
+	... 39 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.sunhub.qa.test_cases.RegisterPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ExistingEmailValidationforRegisteration">
+                  </a> <!-- ExistingEmailValidationforRegisteration -->
+                  <span class="method-name">ExistingEmailValidationforRegisteration</span>
+                  <div class="stack-trace">java.lang.AssertionError: Did not display Error Message expected [true] but found [false]
+	at com.sunhub.registeration.pages.BuyerRegistration.ExistingEmailRegistration(BuyerRegistration.java:131)
+	at com.sunhub.qa.test_cases.RegisterPageTest.ExistingEmailValidationforRegisteration(RegisterPageTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sunhub.qa.test_cases.AddProductTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AddProduct">
+                  </a> <!-- AddProduct -->
+                  <span class="method-name">AddProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="AgeAndConditionCheck">
+                  </a> <!-- AgeAndConditionCheck -->
+                  <span class="method-name">AgeAndConditionCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerificationOfAddedManufacturer">
+                  </a> <!-- VerificationOfAddedManufacturer -->
+                  <span class="method-name">VerificationOfAddedManufacturer</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="existingBrandVerification">
+                  </a> <!-- existingBrandVerification -->
+                  <span class="method-name">existingBrandVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDiscountedPrice">
+                  </a> <!-- verifyDiscountedPrice -->
+                  <span class="method-name">verifyDiscountedPrice</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sunhub.qa.test_cases.LoginPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BsuinessLogin">
+                  </a> <!-- BsuinessLogin -->
+                  <span class="method-name">BsuinessLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GeneralValidEmailWrongPasswordVerification">
+                  </a> <!-- GeneralValidEmailWrongPasswordVerification -->
+                  <span class="method-name">GeneralValidEmailWrongPasswordVerification</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ISellerLogin">
+                  </a> <!-- ISellerLogin -->
+                  <span class="method-name">ISellerLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="MessageAppearance">
+                  </a> <!-- MessageAppearance -->
+                  <span class="method-name">MessageAppearance</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="SPSellerValidateLogin">
+                  </a> <!-- SPSellerValidateLogin -->
+                  <span class="method-name">SPSellerValidateLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sunhub.qa.test_cases.CheckoutTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CheckoutWithStripePayment">
+                  </a> <!-- CheckoutWithStripePayment -->
+                  <span class="method-name">CheckoutWithStripePayment</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ExistingUserGuestCheckout">
+                  </a> <!-- ExistingUserGuestCheckout -->
+                  <span class="method-name">ExistingUserGuestCheckout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NonExistingShopperGuestPPLLater">
+                  </a> <!-- NonExistingShopperGuestPPLLater -->
+                  <span class="method-name">NonExistingShopperGuestPPLLater</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="NonRegisteredUser_registeration_while_guest_checkout">
+                  </a> <!-- NonRegisteredUser_registeration_while_guest_checkout -->
+                  <span class="method-name">NonRegisteredUser_registeration_while_guest_checkout</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TaxCalculation">
+                  </a> <!-- TaxCalculation -->
+                  <span class="method-name">TaxCalculation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.sunhub.qa.test_cases.RegisterPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="NonExistingEmailCheck">
+                  </a> <!-- NonExistingEmailCheck -->
+                  <span class="method-name">NonExistingEmailCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\khawaja.muhammad\Eclipse_Work_Space\POM_Maven\src\main\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.sunhub.ITestListener.ITestListenerImplementation&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.sunhub.qa.test_cases.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;com.sunhub.qa.test_cases.AddProductTest&quot;/&gt;
+      &lt;class name=&quot;com.sunhub.qa.test_cases.CheckoutTest&quot;/&gt;
+      &lt;class name=&quot;com.sunhub.qa.test_cases.RegisterPageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (4 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">smoke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">AddProduct</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">AgeAndConditionCheck</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">existingBrandVerification</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'NonExistingShopperGuestPPLLater')
+data.setCell(0, 2, 'com.sunhub.qa.test_cases.CheckoutTest')
+data.setCell(0, 3, 95108);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyDiscountedPrice')
+data.setCell(1, 2, 'com.sunhub.qa.test_cases.AddProductTest')
+data.setCell(1, 3, 79869);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'CheckoutWithStripePayment')
+data.setCell(2, 2, 'com.sunhub.qa.test_cases.CheckoutTest')
+data.setCell(2, 3, 74823);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ExistingUserGuestCheckout')
+data.setCell(3, 2, 'com.sunhub.qa.test_cases.CheckoutTest')
+data.setCell(3, 3, 70462);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'AddProduct')
+data.setCell(4, 2, 'com.sunhub.qa.test_cases.AddProductTest')
+data.setCell(4, 3, 69259);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'TaxCalculation')
+data.setCell(5, 2, 'com.sunhub.qa.test_cases.CheckoutTest')
+data.setCell(5, 3, 61547);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'AgeAndConditionCheck')
+data.setCell(6, 2, 'com.sunhub.qa.test_cases.AddProductTest')
+data.setCell(6, 3, 49404);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'NonRegisteredUser_registeration_while_guest_checkout')
+data.setCell(7, 2, 'com.sunhub.qa.test_cases.CheckoutTest')
+data.setCell(7, 3, 49101);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'DocumentDeletionCheck')
+data.setCell(8, 2, 'com.sunhub.qa.test_cases.AddProductTest')
+data.setCell(8, 3, 42108);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerificationOfAddedManufacturer')
+data.setCell(9, 2, 'com.sunhub.qa.test_cases.AddProductTest')
+data.setCell(9, 3, 30341);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'existingBrandVerification')
+data.setCell(10, 2, 'com.sunhub.qa.test_cases.AddProductTest')
+data.setCell(10, 3, 29414);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'ImageDeletionCheck')
+data.setCell(11, 2, 'com.sunhub.qa.test_cases.AddProductTest')
+data.setCell(11, 3, 25147);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'BuyerLogin')
+data.setCell(12, 2, 'com.sunhub.qa.test_cases.LoginPageTest')
+data.setCell(12, 3, 17033);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'NonExistingEmailCheck')
+data.setCell(13, 2, 'com.sunhub.qa.test_cases.RegisterPageTest')
+data.setCell(13, 3, 16369);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'ExistingEmailValidationforRegisteration')
+data.setCell(14, 2, 'com.sunhub.qa.test_cases.RegisterPageTest')
+data.setCell(14, 3, 14396);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'GeneralValidEmailWrongPasswordVerification')
+data.setCell(15, 2, 'com.sunhub.qa.test_cases.LoginPageTest')
+data.setCell(15, 3, 2965);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'MessageAppearance')
+data.setCell(16, 2, 'com.sunhub.qa.test_cases.LoginPageTest')
+data.setCell(16, 3, 1610);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'BsuinessLogin')
+data.setCell(17, 2, 'com.sunhub.qa.test_cases.LoginPageTest')
+data.setCell(17, 3, 970);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'ISellerLogin')
+data.setCell(18, 2, 'com.sunhub.qa.test_cases.LoginPageTest')
+data.setCell(18, 3, 948);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'SPSellerValidateLogin')
+data.setCell(19, 2, 'com.sunhub.qa.test_cases.LoginPageTest')
+data.setCell(19, 3, 940);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 12 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sunhub.qa.test_cases.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">BuyerLogin</span>
+                <span class="method-start">14374 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">31422 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">36139 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">BsuinessLogin</span>
+                <span class="method-start">47549 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">48519 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">53250 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ISellerLogin</span>
+                <span class="method-start">68044 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">68992 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">73710 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">SPSellerValidateLogin</span>
+                <span class="method-start">85064 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">86005 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">90724 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">GeneralValidEmailWrongPasswordVerification</span>
+                <span class="method-start">103683 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">106648 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">111395 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">MessageAppearance</span>
+                <span class="method-start">127260 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">128871 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sunhub.qa.test_cases.AddProductTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">133591 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AddProduct</span>
+                <span class="method-start">143171 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">212431 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">existingBrandVerification</span>
+                <span class="method-start">226651 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">256066 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">AgeAndConditionCheck</span>
+                <span class="method-start">267463 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">316868 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">VerificationOfAddedManufacturer</span>
+                <span class="method-start">331898 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">362240 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDiscountedPrice</span>
+                <span class="method-start">380481 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">460351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ImageDeletionCheck</span>
+                <span class="method-start">474342 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">499491 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DocumentDeletionCheck</span>
+                <span class="method-start">509319 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sunhub.qa.test_cases.CheckoutTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">551428 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NonExistingShopperGuestPPLLater</span>
+                <span class="method-start">564971 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">660080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NonRegisteredUser_registeration_while_guest_checkout</span>
+                <span class="method-start">674194 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">723296 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">CheckoutWithStripePayment</span>
+                <span class="method-start">735665 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">810488 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TaxCalculation</span>
+                <span class="method-start">824253 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">SetUp</span>
+                <span class="method-start">885800 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">ExistingUserGuestCheckout</span>
+                <span class="method-start">897317 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.sunhub.qa.test_cases.RegisterPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">967780 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">NonExistingEmailCheck</span>
+                <span class="method-start">979713 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">996082 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">1005816 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">ExistingEmailValidationforRegisteration</span>
+                <span class="method-start">1015700 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">quit</span>
+                <span class="method-start">1030097 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

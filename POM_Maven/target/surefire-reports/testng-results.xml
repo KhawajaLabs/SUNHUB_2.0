@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="20" passed="16" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-06T17:29:23 PKT" name="Suite" finished-at="2021-08-06T17:46:39 PKT" duration-ms="1036051">
+    <groups>
+      <group name="smoke">
+        <method signature="AddProductTest.AddProduct()[pri:1, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" name="AddProduct" class="com.sunhub.qa.test_cases.AddProductTest"/>
+        <method signature="AddProductTest.AgeAndConditionCheck()[pri:3, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" name="AgeAndConditionCheck" class="com.sunhub.qa.test_cases.AddProductTest"/>
+        <method signature="AddProductTest.existingBrandVerification()[pri:2, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" name="existingBrandVerification" class="com.sunhub.qa.test_cases.AddProductTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2021-08-06T17:29:23 PKT" name="Test" finished-at="2021-08-06T17:46:39 PKT" duration-ms="1036051">
+      <class name="com.sunhub.qa.test_cases.AddProductTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:31:37 PKT" name="SetUp" finished-at="2021-08-06T17:31:47 PKT" duration-ms="9580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="AddProduct()[pri:1, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:31:47 PKT" name="AddProduct" finished-at="2021-08-06T17:32:56 PKT" duration-ms="69259" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddProduct -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:32:56 PKT" name="SetUp" finished-at="2021-08-06T17:33:10 PKT" duration-ms="14220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="existingBrandVerification()[pri:2, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:33:10 PKT" name="existingBrandVerification" finished-at="2021-08-06T17:33:40 PKT" duration-ms="29414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- existingBrandVerification -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:33:40 PKT" name="SetUp" finished-at="2021-08-06T17:33:51 PKT" duration-ms="11397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="AgeAndConditionCheck()[pri:3, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:33:51 PKT" name="AgeAndConditionCheck" finished-at="2021-08-06T17:34:40 PKT" duration-ms="49404" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AgeAndConditionCheck -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:34:40 PKT" name="SetUp" finished-at="2021-08-06T17:34:55 PKT" duration-ms="15030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="VerificationOfAddedManufacturer()[pri:4, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:34:55 PKT" name="VerificationOfAddedManufacturer" finished-at="2021-08-06T17:35:26 PKT" duration-ms="30341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerificationOfAddedManufacturer -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:35:26 PKT" name="SetUp" finished-at="2021-08-06T17:35:44 PKT" duration-ms="18241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="verifyDiscountedPrice()[pri:5, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:35:44 PKT" name="verifyDiscountedPrice" finished-at="2021-08-06T17:37:04 PKT" duration-ms="79869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDiscountedPrice -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:37:04 PKT" name="SetUp" finished-at="2021-08-06T17:37:18 PKT" duration-ms="13991" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ImageDeletionCheck()[pri:6, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:37:18 PKT" name="ImageDeletionCheck" finished-at="2021-08-06T17:37:43 PKT" duration-ms="25147" status="FAIL">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Cannot run program "./AutoIT/Image": CreateProcess error=2, The system cannot find the file specified]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Cannot run program "./AutoIT/Image": CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1142)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1073)
+at java.base/java.lang.Runtime.exec(Runtime.java:591)
+at java.base/java.lang.Runtime.exec(Runtime.java:415)
+at java.base/java.lang.Runtime.exec(Runtime.java:312)
+at com.sunhub.qa.util.TestUtil.uploadImage(TestUtil.java:159)
+at com.sunhub.AddProduct.pages.AddProduct.ImagedeletionCheck(AddProduct.java:595)
+at com.sunhub.qa.test_cases.AddProductTest.ImageDeletionCheck(AddProductTest.java:74)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+Caused by: java.io.IOException: CreateProcess error=2, The system cannot find the file specified
+at java.base/java.lang.ProcessImpl.create(Native Method)
+at java.base/java.lang.ProcessImpl.<init>(ProcessImpl.java:483)
+at java.base/java.lang.ProcessImpl.start(ProcessImpl.java:158)
+at java.base/java.lang.ProcessBuilder.start(ProcessBuilder.java:1109)
+... 39 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ImageDeletionCheck -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:37:43 PKT" name="SetUp" finished-at="2021-08-06T17:37:53 PKT" duration-ms="9828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="DocumentDeletionCheck()[pri:7, instance:com.sunhub.qa.test_cases.AddProductTest@769f71a9]" started-at="2021-08-06T17:37:53 PKT" name="DocumentDeletionCheck" finished-at="2021-08-06T17:38:35 PKT" duration-ms="42108" status="FAIL">
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[bound must be greater than origin]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: bound must be greater than origin
+at java.base/java.util.concurrent.ThreadLocalRandom.nextInt(ThreadLocalRandom.java:337)
+at com.sunhub.qa.util.TestUtil.randomCall(TestUtil.java:105)
+at com.sunhub.AddProduct.pages.AddProduct.DocumentDeletionCheck(AddProduct.java:643)
+at com.sunhub.qa.test_cases.AddProductTest.DocumentDeletionCheck(AddProductTest.java:81)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DocumentDeletionCheck -->
+      </class> <!-- com.sunhub.qa.test_cases.AddProductTest -->
+      <class name="com.sunhub.qa.test_cases.LoginPageTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:29:23 PKT" name="SetUp" finished-at="2021-08-06T17:29:38 PKT" duration-ms="14374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="BuyerLogin()[pri:1, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:29:38 PKT" name="BuyerLogin" finished-at="2021-08-06T17:29:55 PKT" duration-ms="17033" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BCDS-LHR-33', ip: '192.168.0.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\KHAWAJ~1.MUH\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41c9db9aece716283fa35d451543b6fd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=92.0.4515.131)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BCDS-LHR-33', ip: '192.168.0.151', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.131, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: C:\Users\KHAWAJ~1.MUH\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:63266}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 41c9db9aece716283fa35d451543b6fd
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy10.click(Unknown Source)
+at com.sunhub.Login.pages.BuyerLoginPage.ValidateLogin(BuyerLoginPage.java:54)
+at com.sunhub.qa.test_cases.LoginPageTest.BuyerLogin(LoginPageTest.java:49)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BuyerLogin -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:29:55 PKT" name="quit" finished-at="2021-08-06T17:30:00 PKT" duration-ms="4715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:00 PKT" name="SetUp" finished-at="2021-08-06T17:30:11 PKT" duration-ms="11410" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="BsuinessLogin()[pri:2, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:11 PKT" name="BsuinessLogin" finished-at="2021-08-06T17:30:12 PKT" duration-ms="970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BsuinessLogin -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:12 PKT" name="quit" finished-at="2021-08-06T17:30:17 PKT" duration-ms="4730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:17 PKT" name="SetUp" finished-at="2021-08-06T17:30:31 PKT" duration-ms="14794" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ISellerLogin()[pri:3, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:31 PKT" name="ISellerLogin" finished-at="2021-08-06T17:30:32 PKT" duration-ms="948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ISellerLogin -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:32 PKT" name="quit" finished-at="2021-08-06T17:30:37 PKT" duration-ms="4717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:37 PKT" name="SetUp" finished-at="2021-08-06T17:30:49 PKT" duration-ms="11354" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="SPSellerValidateLogin()[pri:4, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:49 PKT" name="SPSellerValidateLogin" finished-at="2021-08-06T17:30:49 PKT" duration-ms="940" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SPSellerValidateLogin -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:49 PKT" name="quit" finished-at="2021-08-06T17:30:54 PKT" duration-ms="4718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:30:54 PKT" name="SetUp" finished-at="2021-08-06T17:31:07 PKT" duration-ms="12959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="GeneralValidEmailWrongPasswordVerification()[pri:5, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:31:07 PKT" name="GeneralValidEmailWrongPasswordVerification" finished-at="2021-08-06T17:31:10 PKT" duration-ms="2965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GeneralValidEmailWrongPasswordVerification -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:31:10 PKT" name="quit" finished-at="2021-08-06T17:31:15 PKT" duration-ms="4746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:31:15 PKT" name="SetUp" finished-at="2021-08-06T17:31:31 PKT" duration-ms="15865" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="MessageAppearance()[pri:6, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:31:31 PKT" name="MessageAppearance" finished-at="2021-08-06T17:31:32 PKT" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- MessageAppearance -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.sunhub.qa.test_cases.LoginPageTest@49b0b76]" started-at="2021-08-06T17:31:32 PKT" name="quit" finished-at="2021-08-06T17:31:37 PKT" duration-ms="4718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.sunhub.qa.test_cases.LoginPageTest -->
+      <class name="com.sunhub.qa.test_cases.RegisterPageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.sunhub.qa.test_cases.RegisterPageTest@5ae50ce6]" started-at="2021-08-06T17:45:31 PKT" name="setup" finished-at="2021-08-06T17:45:43 PKT" duration-ms="11933" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="NonExistingEmailCheck()[pri:1, instance:com.sunhub.qa.test_cases.RegisterPageTest@5ae50ce6]" started-at="2021-08-06T17:45:43 PKT" name="NonExistingEmailCheck" finished-at="2021-08-06T17:46:00 PKT" duration-ms="16369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NonExistingEmailCheck -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.sunhub.qa.test_cases.RegisterPageTest@5ae50ce6]" started-at="2021-08-06T17:46:00 PKT" name="quit" finished-at="2021-08-06T17:46:09 PKT" duration-ms="9733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.sunhub.qa.test_cases.RegisterPageTest@5ae50ce6]" started-at="2021-08-06T17:46:09 PKT" name="setup" finished-at="2021-08-06T17:46:19 PKT" duration-ms="9883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ExistingEmailValidationforRegisteration()[pri:2, instance:com.sunhub.qa.test_cases.RegisterPageTest@5ae50ce6]" started-at="2021-08-06T17:46:19 PKT" name="ExistingEmailValidationforRegisteration" finished-at="2021-08-06T17:46:34 PKT" duration-ms="14396" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Did not display Error Message expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Did not display Error Message expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertTrue(Assert.java:45)
+at com.sunhub.registeration.pages.BuyerRegistration.ExistingEmailRegistration(BuyerRegistration.java:131)
+at com.sunhub.qa.test_cases.RegisterPageTest.ExistingEmailValidationforRegisteration(RegisterPageTest.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:284)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:119)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:428)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:562)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:548)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExistingEmailValidationforRegisteration -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.sunhub.qa.test_cases.RegisterPageTest@5ae50ce6]" started-at="2021-08-06T17:46:34 PKT" name="quit" finished-at="2021-08-06T17:46:39 PKT" duration-ms="5692" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.sunhub.qa.test_cases.RegisterPageTest -->
+      <class name="com.sunhub.qa.test_cases.CheckoutTest">
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:38:35 PKT" name="SetUp" finished-at="2021-08-06T17:38:48 PKT" duration-ms="13543" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="NonExistingShopperGuestPPLLater()[pri:1, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:38:48 PKT" name="NonExistingShopperGuestPPLLater" finished-at="2021-08-06T17:40:24 PKT" duration-ms="95108" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NonExistingShopperGuestPPLLater -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:40:24 PKT" name="SetUp" finished-at="2021-08-06T17:40:38 PKT" duration-ms="14114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="NonRegisteredUser_registeration_while_guest_checkout()[pri:2, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:40:38 PKT" name="NonRegisteredUser_registeration_while_guest_checkout" finished-at="2021-08-06T17:41:27 PKT" duration-ms="49101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NonRegisteredUser_registeration_while_guest_checkout -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:41:27 PKT" name="SetUp" finished-at="2021-08-06T17:41:39 PKT" duration-ms="12369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="CheckoutWithStripePayment()[pri:3, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:41:39 PKT" name="CheckoutWithStripePayment" finished-at="2021-08-06T17:42:54 PKT" duration-ms="74823" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckoutWithStripePayment -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:42:54 PKT" name="SetUp" finished-at="2021-08-06T17:43:08 PKT" duration-ms="13765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="TaxCalculation()[pri:4, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:43:08 PKT" name="TaxCalculation" finished-at="2021-08-06T17:44:09 PKT" duration-ms="61547" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TaxCalculation -->
+        <test-method is-config="true" signature="SetUp()[pri:0, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:44:09 PKT" name="SetUp" finished-at="2021-08-06T17:44:21 PKT" duration-ms="11517" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SetUp -->
+        <test-method signature="ExistingUserGuestCheckout()[pri:5, instance:com.sunhub.qa.test_cases.CheckoutTest@4c9f8c13]" started-at="2021-08-06T17:44:21 PKT" name="ExistingUserGuestCheckout" finished-at="2021-08-06T17:45:31 PKT" duration-ms="70462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ExistingUserGuestCheckout -->
+      </class> <!-- com.sunhub.qa.test_cases.CheckoutTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,164 @@
+package com.sunhub.GuestCheckout.pages;
+
+import org.openqa.selenium.By.ByXPath;
+
+import java.util.List;
+import java.util.Properties;
+import java.util.Random;
+import java.util.regex.Pattern;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.google.inject.matcher.Matcher;
+import com.lowagie.text.pdf.hyphenation.TernaryTree.Iterator;
+import com.sunhub.qa.base.BaseClass;
+
+import net.bytebuddy.implementation.bytecode.ByteCodeAppender.Size;
+
+public  class GuestCheckoutFlow extends BaseClass
+{
+
+	@FindBy(xpath = "//*[@id=\"main-navbar\"]") 
+	List<WebElement> allElements;
+
+	@FindBy(xpath = "//*[@id=\"main-navbar\"]/div/div/div/ul/li[1]/a") 
+	WebElement solarPanels;
+
+	@FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]/h4/a") 
+	WebElement Product_Title;
+
+	@FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]/div[3]/div/a[1]") 
+	WebElement AddCartBtn;
+
+	@FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]/h4/small/span") 
+	WebElement SubCategory;
+
+	@FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]/div[2]/ul/li[4]/a") 
+	WebElement inStock;
+
+	@FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]/div[3]/div/div/input[2]") 
+	WebElement addedQuantity;
+
+	@FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]//*[@id=\"increase\"]")
+	WebElement Plus;	
+
+	@FindBy(xpath = "//*[@id=\"products\"]/div[3]/div/div[2]/div[3]/p") 
+	WebElement UnitPrice;
+
+	@FindBy(xpath = "//*[@id=\"shoppingcartddmain\"]/div/div/div/div[3]/div[2]") 
+	WebElement ViewCart;
+
+	@FindBy(xpath = "//*[@id=\"content\"]/div/div/div[2]/a[1]") 
+	WebElement GotoCheckout;
+
+	//***************************Shipping and billing address information****************************//
+
+	//First Name
+	@FindBy(xpath = "//*[@id=\"SHIPPING_FNAME\"]") 
+	WebElement fn;
+
+	//Last Name
+	@FindBy(xpath = "//*[@id=\"SHIPPING_LNAME\"]") 
+	WebElement ln;
+
+	//Email
+	@FindBy(xpath = "//*[@id=\"SIGNUP_CHECKOUT_EMAIL\"]") 
+	WebElement email;
+
+	//Shipping Address
+	@FindBy(xpath = "//*[@id=\"SHIPPING_STREET\"]") 
+	WebElement address;
+	
+	//City
+	@FindBy(xpath = "//*[@id=\"SHIPPING_CITY\"]") 
+	WebElement city;
+
+	//zip
+	@FindBy(xpath = "//*[@id=\"SHIPPING_ZIP\"]") 
+	WebElement zip;	
+
+	//phone  number
+	@FindBy(xpath = "//*[@id=\"SHIPPING_PHONE\"]") 
+	WebElement pno;
+
+	//checkbox-Billing address same as Shipping address
+	@FindBy(xpath = "//*[@id=\"sameaddress\"]") 
+	WebElement bladrs;
+
+	//checkbox-Confirmation
+	@FindBy(xpath = "//*[@id=\"checkout-ptc-check\"]") 
+	WebElement confirmation;
+
+	//Pay with stripe
+	@FindBy(xpath = "//*[@id=\"stripe-btn\"]") 
+	WebElement stripePay;
+
+	
+	@FindBy(xpath = "//*[@id=\"form-checkout\"]/div[3]/div[2]/div/button/div/div/div")
+	WebElement state;
+	
+	
+
+
+	//Constructor for Initializing the Page Objects
+	public GuestCheckoutFlow() throws Throwable
+	{
+		PageFactory.initElements(driver, this);
+	}
+
+
+	@SuppressWarnings("unchecked")
+	public void NonExistingUserGuest() throws InterruptedException
+	{	
+		Thread.sleep(3000);
+		solarPanels.click();
+		Thread.sleep(1000);
+		Plus.click();
+		Thread.sleep(1000);
+		Plus.click();
+		Thread.sleep(1000);
+		Plus.click();
+		Thread.sleep(1000);
+		System.out.println(Product_Title.getText() + " is going to be added in cart");  
+		System.out.println(SubCategory.getText() + " is subcategory");
+		System.out.println(inStock.getText() + " is available in stock");	
+		String AddedQuantity = addedQuantity.getAttribute("value");		
+		System.out.println(AddedQuantity + " is added into the cart");		
+		System.out.println(UnitPrice.getText()  + " is unit price");
+
+		AddCartBtn.click();
+		Thread.sleep(2000);
+		ViewCart.click();
+		GotoCheckout.click();
+		Thread.sleep(5000);
+
+		fn.click(); 
+		fn.sendKeys(prop.getProperty("first_name")); 
+		ln.click();
+		ln.sendKeys(prop.getProperty("last_name")); 
+		email.click();
+		email.sendKeys(prop.getProperty("email")); 
+		address.click();
+		address.sendKeys("Street: 87 West Ohio St.");
+
+
+		Thread.sleep(1000); 
+		city.click(); 
+		city.sendKeys("Yuba City");
+		Thread.sleep(1000); 
+		zip.click(); 
+		zip.sendKeys("95993"); 
+		Thread.sleep(1000);
+		pno.click(); 
+		pno.sendKeys("(234) 234-2342"); 
+		Thread.sleep(1000);
+		bladrs.click(); 
+		Thread.sleep(1000); 
+		confirmation.click(); 
+		Thread.sleep(1000);
+		stripePay.click();		 
+	}
+}

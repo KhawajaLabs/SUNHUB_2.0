@@ -1,0 +1,360 @@
+package com.sunhub.GuestCheckout.pages;
+
+import static org.junit.Assert.assertTrue;
+import static org.testng.Assert.assertTrue;
+
+import java.util.ArrayList;
+import java.util.Set;
+import java.util.concurrent.TimeUnit;
+
+import javax.xml.xpath.XPath;
+
+import org.apache.commons.collections.iterators.ArrayListIterator;
+import org.hamcrest.core.IsNot;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import com.lowagie.text.List;
+import com.lowagie.text.pdf.hyphenation.TernaryTree.Iterator;
+import com.sunhub.qa.base.BaseClass;
+import com.sunhub.qa.util.TestUtil;
+
+import net.bytebuddy.description.annotation.AnnotationList.Empty;
+
+public class GuestCheckoutFlow extends BaseClass
+{
+
+	//Page Factory - OR:
+
+	@FindBy(xpath = "//*[@id=\"main-navbar\"]/div/div/div/ul/li[1]/a") 
+	WebElement categoryClick;
+
+	@FindBy(xpath = "//*[@id='increase']")
+	WebElement increaseQuantity;
+
+	@FindBy(xpath = "//*[@id=\"products\"]/div[1]/div/div[2]/div[3]/div/a[1]")
+	WebElement addToCart;
+
+	@FindBy(xpath = "//*[@id=\"shoppingcartddmain\"]/div/div/div/div[3]/div[2]") 
+	WebElement viewcart;
+
+	@FindBy(xpath = "//*[@id=\"content\"]/div/div/div[2]/a[1]") 
+	WebElement gotoCheckout;
+
+
+	/* ----------------- Shipping and billing information fields --------------- */
+
+	@FindBy(xpath = "//*[@id=\"SHIPPING_FNAME\"]")
+	WebElement fn;
+
+	@FindBy(xpath = "//*[@id=\"SHIPPING_LNAME\"]")
+	WebElement ln;
+
+	@FindBy(xpath = "//*[@id=\"SIGNUP_CHECKOUT_EMAIL\"]")
+	WebElement email;
+
+	@FindBy(xpath = "//*[@id=\"SHIPPING_STREET\"]")
+	WebElement address;
+
+	@FindBy(xpath = "//*[@id=\"SHIPPING_CITY\"]")
+	WebElement city;
+
+	@FindBy(xpath = "//*[@id=\"SHIPPING_ZIP\"]")
+	WebElement zip;
+
+	@FindBy(xpath = "//*[@id=\"SHIPPING_PHONE\"]")
+	WebElement phone;
+
+	@FindBy(xpath = "//*[@id=\"sameaddress\"]")
+	WebElement sameAsBilling;
+
+	@FindBy(xpath = "//*[@id=\"checkout-ptc-check\"]")
+	WebElement confirmation;
+
+	/************************** This is a Country drop down handling part **************************/	
+
+	@FindBy(xpath = "//*[@id=\"form-checkout\"]/div[3]/div[1]/div/button")	
+	WebElement coun;
+	@FindBy(xpath = "//*[@id=\"form-checkout\"]/div[3]/div[1]/div/div")		
+	java.util.List<WebElement> country;	
+
+	/************************** This is a Country drop down handling part **************************/	
+
+	/************************** This is a State drop down handling part **************************/	
+	@FindBy(xpath = "//*[@id=\"form-checkout\"]/div[3]/div[2]/div/div")		  
+	java.util.List<WebElement> state; 		
+	@FindBy(xpath = "//*[@id=\"form-checkout\"]/div[3]/div[2]/div")	
+	WebElement StateClick;
+	
+	
+	@FindBy(xpath = "//*[@id=\"form-checkout\"]/div[3]/div[2]/div/div")		  
+	java.util.List<WebElement> e1; 
+	
+	@FindBy(xpath = "//div[@class='dropdown-menu show']/div[@class= 'inner show']/ul[@class='dropdown-menu inner show']")		  
+	java.util.List<WebElement> e2; 
+	
+	@FindBy(xpath = "//*[@id=\"form-checkout\"]/div[3]/div[2]/div/div/div[2]")		  
+	java.util.List<WebElement> e3; 
+	
+	@FindBy(xpath = "//*[@id=\"form-checkout\"]/div[3]/div[2]/div/div/div[2]")		  
+	java.util.List<WebElement> e4; 
+
+	
+	/************************** This is a State drop down handling part **************************/	
+
+	@FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div[2]/div[4]/div/div[1]/div[3]/p")		  
+	WebElement service;
+
+	@FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div[2]/div[4]/div/div[1]/div[4]")		  
+	WebElement selectServiceClick;
+	@FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div[2]/div[4]/div/div[1]/div[4]/div/div/div")		   
+	java.util.List<WebElement> selectService;
+	
+	@FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div[2]/div[4]/div/div[1]/div[6]/div")		  
+	WebElement shipbyClick;
+	@FindBy(xpath = "//*[@id=\"content\"]/div[1]/div/div[2]/div[4]/div/div[1]/div[6]/div/div")		  
+	java.util.List<WebElement> shipbySelect;
+	
+	
+	@FindBy(xpath = "//*[@id=\"stripe-btn\"]")		  
+	WebElement payWithStripeBtn;
+
+	
+	@FindBy(xpath = "//*[@id=\"container\"]/section/span[2]/div/div/main/form/div/div/div/div/div/div[1]/div[1]/div/div/div/fieldset/span/div")		  
+	WebElement stripeEmail7;
+		
+	@FindBy(xpath = "//*[@id=\"a6bf53c0-81c1-11eb-894b-ffa1ff554333\"]")		  
+	WebElement stripeCardNo;
+	
+	@FindBy(xpath = "//*[@id=\"a6bfa1e0-81c1-11eb-894b-ffa1ff554333\"]")		  
+	WebElement stripeExpiry;
+	
+	@FindBy(xpath = "//*[@id=\"a6bfa1e1-81c1-11eb-894b-ffa1ff554333\"]")		  
+	WebElement stripeCVC;
+	
+	@FindBy(xpath = "//*[@id=\"container\"]/section/span[2]/div/div/main/form/div/div/div/div/div/div[2]/div/div/fieldset/span[1]/a/div")		  
+	WebElement stripeRemember;
+	
+	@FindBy(xpath = "//*[@id=\"container\"]/section/span[2]/div/div/main/form/nav/div/div/div/button")		  
+	WebElement stripeFinalPayment;
+	
+	
+	@FindBy(xpath = "//*[@id=\"container\"]/section/span[2]/div/div")		  
+	WebElement modalPopup;
+	
+	
+	
+	//Constructor for Initializing the Page Objects
+	public GuestCheckoutFlow() throws Throwable
+	{
+		PageFactory.initElements(driver, this); 
+	}
+
+	public void NonExistingUserGuest(String fname, String lname, String eml, String add, String cty, String zp, String phn) throws InterruptedException
+	{
+		driver.manage().timeouts().implicitlyWait(TestUtil.ImplicitWait, TimeUnit.SECONDS);
+		categoryClick.click();
+		Thread.sleep(10000);
+		increaseQuantity.click();
+		Thread.sleep(2000);
+		driver.manage().timeouts().implicitlyWait(TestUtil.ImplicitWait, TimeUnit.SECONDS);		
+		addToCart.click();
+		Thread.sleep(2000);
+		viewcart.click();
+		driver.manage().timeouts().implicitlyWait(TestUtil.ImplicitWait, TimeUnit.SECONDS);
+		gotoCheckout.click();
+		driver.manage().timeouts().implicitlyWait(TestUtil.ImplicitWait, TimeUnit.SECONDS);		
+		fn.sendKeys(fname);
+		ln.sendKeys(lname);
+		email.sendKeys(eml);
+		address.sendKeys(add);
+		city.sendKeys(cty);
+		zip.sendKeys(zp);
+		phone.sendKeys(phn);
+		Thread.sleep(2000);
+		confirmation.click();	
+		Thread.sleep(3000);
+
+		coun.click();	
+		Thread.sleep(2000);
+		try 
+		{
+			for(int i=0; i<=country.size() ; i++)
+			{
+				if(country.get(i).getText().contains("United"))
+				{
+					country.get(i).click();
+					break;
+				}
+			}
+		}
+		catch(Exception indexoutofboundException)
+		{
+			throw indexoutofboundException;
+		}
+
+		Thread.sleep(1000);
+		StateClick.click();	
+		Thread.sleep(1000);	
+
+		System.out.println("This is size from e1 *************** " + e1.size());
+		
+		System.out.println("This is size from e2 for UL list *************** " + e2.size());
+
+		System.out.println("This is size from e3 above UL list *************** " + e3.size());
+		
+		System.out.println("This is size from e4 above UL there is a dive *************** " + e4.size());
+		
+		WebElement StateListCount = driver.findElement(By.xpath("//div[@class='dropdown-menu show']/div[@class= 'inner show']/ul[@class='dropdown-menu inner show']"));
+        Select StateList = new Select(StateListCount);
+        java.util.List<WebElement> finalCount = StateList.getOptions();
+		
+		
+		/*
+			for(int i=0; i<=s4.size() ; i++)
+			{
+				System.out.println(s4.get(i).getText());
+
+				if(s4.get(i).getText().contains("Ohio"))
+				{
+					s4.get(i).click();					
+					break;
+				}
+			}*/
+		
+		
+		/***********************Service and Shipping Selection************************/	
+
+        
+		Thread.sleep(3000);
+		sameAsBilling.click();
+		
+		Thread.sleep(1000);
+		if(service.isDisplayed())
+		{	
+			Thread.sleep(1000);
+			selectServiceClick.click();
+			Thread.sleep(2000);
+			
+			for(int i=0; i<=selectService.size(); i++)
+			{
+				System.out.println(selectService.get(i).getText());
+				
+				if(selectService.get(i).getText().contains("Fed"))
+				{
+					selectService.get(i).click();
+					break;
+				}
+			}			
+			
+			Thread.sleep(2000);			
+			shipbyClick.click();
+			Thread.sleep(2000);
+		
+			try 
+			{
+				for(int i=0; i<=shipbySelect.size(); i++)
+				{
+					System.out.println(shipbySelect.get(i).getText());
+
+					if(shipbySelect.get(i).getText().contains("ground") )
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+					else if(shipbySelect.get(i).getText().contains("Ground"))
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+					else if(shipbySelect.get(i).getText().contains("Priority"))
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+					else if(shipbySelect.get(i).getText().contains("priority"))
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+					else if(shipbySelect.get(i).getText().contains("Economy"))
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+					else if(shipbySelect.get(i).getText().contains("priority"))
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+					else if(shipbySelect.get(i).getText().contains("2Day"))
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+					else if(shipbySelect.get(i).getText().contains("2Day AM"))
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+					else if(shipbySelect.get(i).getText().contains("Express Saver"))
+					{
+						shipbySelect.get(i).click();
+						break;
+					}
+				}
+			}
+			catch(Exception indexoutofboundException)
+			{
+				throw indexoutofboundException;
+			}				
+		}	
+	
+		/***********************Service and Shipping Selection************************/	
+		
+		
+		payWithStripeBtn.click();	
+		Thread.sleep(3000);		
+		
+		
+		/*
+		 * Set<String> handler = driver.getWindowHandles(); java.util.Iterator<String>
+		 * it = handler.iterator();
+		 * 
+		 * String parentWindow = it.next(); System.out.println("Parent " +
+		 * parentWindow); String childWindow = it.next(); System.out.println("Child " +
+		 * childWindow);
+		 * 
+		 * driver.switchTo().window(childWindow);
+		 * stripeEmail.sendKeys(prop.getProperty("stripeEmail"));
+		 */
+		 		
+		/*
+		Thread.sleep(1000);
+		stripeCardNo.click();
+		stripeCardNo.sendKeys(prop.getProperty("stripeCardno"));
+		Thread.sleep(1000);
+		stripeCVC.click();
+		stripeCVC.sendKeys(prop.getProperty("stripeCVC"));
+		Thread.sleep(1000);
+		stripeExpiry.click();
+		stripeExpiry.sendKeys(prop.getProperty("stripeExpiry"));
+		Thread.sleep(1000);
+		
+		if(!stripeRemember.isSelected())
+		{			
+			stripeRemember.click();
+		}
+		else
+		{
+			stripeFinalPayment.click();
+		}*/
+		
+	}
+}
