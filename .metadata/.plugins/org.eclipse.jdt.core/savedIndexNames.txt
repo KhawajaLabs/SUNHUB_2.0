@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.131+E:\Personal\Selenium\Eclipse_Work_Space_1\.metadata\.plugins\org.eclipse.jdt.core
 104178939.index
 2596259333.index
@@ -195,3 +196,31 @@ INDEX VERSION 1.131+E:\Personal\Selenium\Eclipse_Work_Space_1\.metadata\.plugins
 2340026152.index
 110441585.index
 3818010166.index
+=======
+INDEX VERSION 1.131+D:\My Own WorkSpace\.metadata\.plugins\org.eclipse.jdt.core
+3440608069.index
+1165467397.index
+2728304272.index
+3679255261.index
+647245748.index
+376087921.index
+3485172937.index
+1290487430.index
+30313950.index
+3614114151.index
+2228242899.index
+4142864328.index
+3850137683.index
+1302790908.index
+3551345026.index
+572981262.index
+2898297581.index
+366764813.index
+709129513.index
+3735682096.index
+2362144765.index
+3531997564.index
+158655249.index
+2981649273.index
+2632612861.index
+>>>>>>> ec6d269218bf46f78297db982eb55b658b1b8e42
