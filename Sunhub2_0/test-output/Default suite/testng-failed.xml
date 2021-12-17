@@ -5,8 +5,8 @@
     <classes>
       <class name="pkg.TestCases.BuyProductCheckoutTest$Product_Purchase">
         <methods>
+          <include name="FunctionBothCheckout"/>
           <include name="buying"/>
-          <include name="FreeshippingCheckout"/>
         </methods>
       </class> <!-- pkg.TestCases.BuyProductCheckoutTest$Product_Purchase -->
     </classes>

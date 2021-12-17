@@ -9,12 +9,12 @@ import com.baseclass.pages.BaseClass;
 
 public class Utility extends BaseClass 
 {
-	public static int rand()
+	public static int rand(int s)
 	{
 		int randomNum = 0;
-		for(int i=1; i<2 ; i++)
+		for(int i=1; i<s ; i++)
 		{
-			randomNum = ThreadLocalRandom.current().nextInt(1, 2+1);
+			randomNum = ThreadLocalRandom.current().nextInt(1, s+1);
 			//System.out.println(randomNum);
 		}
 

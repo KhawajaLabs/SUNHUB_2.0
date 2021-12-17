@@ -34,10 +34,10 @@ public class BuyProductCheckoutTest extends BaseClass
 		}
 
 		@Test		
-		public void FunctionCheckout() throws Exception 
+		public void FunctionBothCheckout() throws Exception 
 		{
 			s.rightUserNameAndRightPassword();			
-			b.checkoutWtihService();
+			b.checkoutWtihServiceAsBoth();
 		}
 		
 		@Test		
@@ -62,7 +62,12 @@ public class BuyProductCheckoutTest extends BaseClass
 			b.CheckoutWithFreeshipping();
 		}
 		
-		
+		@Test		
+		public void FedexCheckout() throws Exception 
+		{
+			s.rightUserNameAndRightPassword();
+			b.CheckoutWithFedexWithNoShippingMethod();
+		}
 
 	}	
 	

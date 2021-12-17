@@ -38,7 +38,7 @@ public class BaseClass
 		System.setProperty("webdriver.chrome.driver", "./Drivers/Chrome Driver/chromedriver1.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
-		//driver.manage().deleteAllCookies();
+		driver.manage().deleteAllCookies();
 		driver.get(prop.getProperty("baseurl"));
 	}
 }

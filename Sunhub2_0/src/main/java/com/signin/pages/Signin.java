@@ -2,6 +2,7 @@ package com.signin.pages;
 
 import static org.testng.Assert.*;
 
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -14,7 +15,7 @@ public class Signin extends BaseClass
 	//page factory methods
 
 
-	@FindBy(xpath = "//*[@id=\"root\"]/div[1]/header/div[2]/div/div/div[2]/div/div[3]/div/a[1]/span")
+	@FindBy(xpath = "//*[@id=\"root\"]/div[1]/header/div[2]/div/div/div[2]/div/div[3]/div/div[1]/div/a[1]/span")
 	WebElement signinclick;
 
 	@FindBy(xpath = "//*[@name=\"email\"]")	
@@ -50,16 +51,16 @@ public class Signin extends BaseClass
 
 	public void rightUserNameAndRightPassword() throws Exception
 	{
-		Thread.sleep(6000);
 		signinclick.click();
-		Thread.sleep(5000);
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		emailinputclick.click();
-		Thread.sleep(1000);
+		Thread.sleep(3000);
 		emailtext.sendKeys(prop.getProperty("username"));
 		pswdinputClick.click();
 		pswdinput.sendKeys(prop.getProperty("pswd"));
 		Thread.sleep(1000);
 		loginbuttonclick.click();
+		Thread.sleep(4000);
 	}
 
 	public void rightUserNameAndWrongPassword() throws Exception
