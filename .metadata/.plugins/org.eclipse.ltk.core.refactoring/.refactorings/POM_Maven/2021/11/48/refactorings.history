@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Copy element &apos;pom.xml&apos; to &apos;SDemo_V_1&apos;&#x0D;&#x0A;- Original project: &apos;POM_Maven&apos;&#x0D;&#x0A;- Destination element: &apos;SDemo_V_1&apos;&#x0D;&#x0A;- Original element: &apos;pom.xml&apos;" description="Copy file" element1="pom.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1637850484848" target="/SDemo_V_1" units="0" version="1.0"/>
-</session>
